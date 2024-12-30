@@ -1,82 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Responsive Portfolio Website HTML CSS | CodingNepal</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">MyPortfolio</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Shruti's Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></color:></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="www.linkedin.com/in/shrutishukla1105"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+        <a href="www.linkedin.com/in/shrutishukla1105"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
+  <!-- Home Section Start -->
+  <section class="home" id="home">
     <div class="home-content">
-      <h1>Hi, I'm <span>Shruti</span></h1>
-      <p>A Passionate Software Engineer</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am a third-year student passionate about creating impactful software solutions. Skilled in web development, I love building intuitive and responsive websites.</p>
-    <div class="skills">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>React</div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="assets/images/project1.png" alt="Project 1">
-        <h3>Project One</h3>
-        <p>Brief description of Project One.</p>
-        <a href="#" class="btn">Live Demo</a>
-        <a href="#" class="btn">GitHub</a>
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Shruti Shukla</div>
+        <div class="text-three">Software Developer</div>
+        <div class="text-four"></div>
       </div>
-      <div class="project-card">
-        <img src="assets/images/project2.png" alt="Project 2">
-        <h3>Project Two</h3>
-        <p>Brief description of Project Two.</p>
-        <a href="#" class="btn">Live Demo</a>
-        <a href="#" class="btn">GitHub</a>
+      <div class="button">
+        <button>Hire Me</button>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-    <div class="social-links">
-      <a href="#"><img src="assets/icons/linkedin.svg.svg" alt="LinkedIn"></a>
-      <a href="#"><img src="assets/icons/github.svg.svg" alt="GitHub"></a>
-      <a href="#"><img src="assets/icons/twitter.svg.svg" alt="Twitter"></a>
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">Passionate Developer</div>
+          <p>
+            I am a dedicated software developer with a keen interest in web and application development. With experience in Java, Python, and various front-end technologies, I strive to create efficient, user-friendly solutions. My aim is to contribute to innovative projects that make a difference.
+          </p>
+          <div class="button">
+            <a href="https://drive.google.com/file/d/1PTmi3igaBkg4Fr3i1_ELjTNj6kVUVdTp/view?usp=drive_link" download="Shruti_CV.pdf">
+            <button>Download CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- My Skill Section Start -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflect Our Expertise</div>
+          <p>I possess strong skills in web development, application development, and problem-solving. I am continuously learning new technologies to enhance my skill set and deliver exceptional results.</p>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">85%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">React</div>
+            <div class="per">85%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Java</div>
+            <div class="per">85%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Python</div>
+            <div class="per">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Web Development</div>
+          <p>Creating responsive and visually appealing websites tailored to client requirements.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">UI/UX Design</div>
+          <p>Designing user interfaces that offer seamless user experiences.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="topic">SEO Optimization</div>
+          <p>Optimizing websites for better search engine visibility and performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- My Projects Section Start -->
+<section class="projects" id="projects">
+  <div class="content">
+    <div class="title"><span>My Projects</span></div>
+    <div class="projects-details">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="topic">Project 1: OnTheGo</div>
+        <p>OnTheGo helps students find travel partners for safer and cost-effective journeys. It integrates JavaScript, HTML, React, MongoDB, NodeJS, Tailwind CSS, Express JS, Firebase, and Google OAuth for secure user authentication. It led to a 30% reduction in API response times and a 40% reduction in load time.</p>
+
+        <div class="button">
+          <a href="https://onthego-swcc.onrender.com/" target="_blank">
+            <button>View Project</button>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="topic">Project 2: WebCam Attendance System</div>
+        <p>Live Webcam based Face Attendance System Project through python programming</p>
+
+         <p> Details : Smart Attendance Management System is an application developed for daily student attendance in colleges or. schools. This project attempts to record attendance through face detection.
+          
+          This System uses facial recognition technology to record the attendance through a high resolution digital camera/webcam that detects and recognizes faces and compare the recognize faces with students/known faces images stored in faces database(CSV).</p>
+
+          <div class="button">
+            <a href="https://github.com/shruti110503/AttendanceSystem" target="_blank">
+              <button>View Project</button>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Me Section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>Feel free to reach out if you have any exciting projects or collaborations. Let's build something amazing together!</p>
+        <div class="button">
+          <button>Let's Chat</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Shruti Shukla</a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
